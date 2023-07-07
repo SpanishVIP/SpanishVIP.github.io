@@ -1,0 +1,72 @@
+
+body {
+    background: white; /* Make it white if you need */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+  }
+
+
+
+/* '''''''''''''''''''''''''''''''responsive-table-spanish-english'''''''''''''''''''''''''''''''''''''''''''' */  
+    
+.responsive-table-spanish-english {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .responsive-table-spanish-english thead th,
+  .responsive-table-spanish-english tbody td {
+    border: 2px solid #ffffff; /* This sets the border color to white */
+    padding: 10px;
+    text-align: left;
+  }
+  .responsive-table-spanish-english thead {
+    background-color: #fff3ee;
+    font-weight: bold;
+  }
+  .responsive-table-spanish-english thead th {
+    color: #fc8854;
+  }
+  .responsive-table-spanish-english td {
+    position: relative;
+  }
+  .responsive-table-spanish-english td .text-content-spanish-english {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    .responsive-table-spanish-english {
+      width: 100%;
+      border-collapse: collapse;
+      
+    }
+  }
+  
+  
+  .responsive-table-spanish-english tbody tr:nth-child(even) {
+      background-color: #f9f9f9; /* This is a light grey color */
+  }
+  
+  .responsive-table-spanish-english tbody tr:nth-child(odd) {
+      background-color: #ffffff; /* This is white */
+  }
+      
+
+  .responsive-table-spanish-english td .fi {
+    position: absolute;
+    right: 12px; /* Adjust the value to your preference */
+    top: 50%;
+    transform: translateY(-50%);
+    color:#fc8854;
+    opacity: 9;
+}
+
+
+.responsive-table-spanish-english td .fi:hover {
+    color:#9b3c10;
+    opacity: 1;
+    transition: 0.3s;
+  }

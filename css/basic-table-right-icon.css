@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat';
+    height: 100%;
   }
 
 
@@ -11,7 +12,6 @@ body {
 /* '''''''''''''''''''''''''''''''responsive-table-spanish-english'''''''''''''''''''''''''''''''''''''''''''' */  
     
 .responsive-table-spanish-english {
-   
     width: 100%;
     border-collapse: collapse;
   }
@@ -19,7 +19,7 @@ body {
   .responsive-table-spanish-english tbody td {
     border: 2px solid #ffffff; /* This sets the border color to white */
     padding: 10px;
-    text-align: left;
+    text-align: center;
   }
   .responsive-table-spanish-english thead {
     background-color: #fff3ee;
@@ -35,15 +35,33 @@ body {
     display: inline-block;
     vertical-align: middle;
   }
+
+  .responsive-table-spanish-english td .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
   
   
   /* Responsive styles */
   @media only screen and (max-width: 600px) {
     .responsive-table-spanish-english {
-      width: 100%;
-      border-collapse: collapse;
+        width: 100%;
+        border-collapse: collapse;
       
     }
+
+    .responsive-table-spanish-english td .content-wrapper {
+        flex-direction: column;
+        
+    }
+
+    .responsive-table-spanish-english td .icon-wrapper {
+        padding-top: 15px;
+        align-items: center; 
+    }
+
+   
   }
   
   
@@ -55,19 +73,13 @@ body {
       background-color: #ffffff; /* This is white */
   }
       
-
-  .responsive-table-spanish-english td .fi {
-    position: absolute;
-    right: 12px; /* Adjust the value to your preference */
-    top: 50%;
-    transform: translateY(-50%);
+    .responsive-table-spanish-english td .fi {
     color:#fc8854;
-    opacity: 9;
+    opacity: 0.9;
 }
 
-
-.responsive-table-spanish-english td .fi:hover {
+    .responsive-table-spanish-english td .fi:hover {
     color:#9b3c10;
     opacity: 1;
     transition: 0.3s;
-  }
+}
