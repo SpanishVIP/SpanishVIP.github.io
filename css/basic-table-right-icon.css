@@ -83,3 +83,11 @@ body {
     opacity: 1;
     transition: 0.3s;
 }
+
+
+    .orange-color-text{
+        color: rgb(254, 126, 68); 
+        font-weight: bold; 
+        vertical-align: baseline;
+
+    }
