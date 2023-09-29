@@ -3,7 +3,7 @@ body {
     background: white; /* Make it white if you need */
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat';
+    font-family: 'DM Sans', sans-serif;
     height: 100%;
   }
 
@@ -22,11 +22,11 @@ body {
     text-align: center;
   }
   .responsive-table-spanish-english thead {
-    background-color: #fff3ee;
+    background-color: rgba(255, 168, 129, 0.1);
     font-weight: bold;
   }
   .responsive-table-spanish-english thead th {
-    color: #fc8854;
+    color: rgba(252, 136, 84, 1.0);
   }
   .responsive-table-spanish-english td {
     position: relative;
@@ -74,7 +74,7 @@ body {
   }
       
     .responsive-table-spanish-english td .fi {
-    color:#fc8854;
+    color:rgba(252, 136, 84, 1.0);
     opacity: 0.9;
 }
 
